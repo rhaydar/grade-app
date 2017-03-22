@@ -1,0 +1,11 @@
+{
+  "name": "grade-app",
+  "version": "1.0.0",
+  "description": "Grading Application for Web Development Course",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rashedul Haydar",
+  "license": "ISC"
+}
