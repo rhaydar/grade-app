@@ -8,7 +8,7 @@ app.set("view engine", "ejs");
 
 // root path, homepage
 app.get("/", function(req, res) {
-	res.send("Grading app works!");
+	res.render("landing.ejs");
 });
 
 // listen for connections
