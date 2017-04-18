@@ -3,8 +3,9 @@ CREATE TABLE IF NOT EXISTS user (
 	first_name VARCHAR(20) NOT NULL,
 	last_name VARCHAR(20) NOT NULL,
 	e_mail VARCHAR(40) NOT NULL,
-	username VARCHAR(20),
-	password PASSWORD,
+	username VARCHAR(30) NOT NULL,
+	password CHAR(60) NOT NULL,
+	salt VARCHAR(30) NOT NULL,
 	admin BIT(1) DEFAULT 0,
 	PRIMARY KEY(uid)
 );
