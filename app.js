@@ -40,7 +40,12 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 // root path, homepage
 app.get("/", function(req, res) {
-	res.render("landing.ejs");
+	res.redirect("/login");
+});
+
+// login GET path
+app.get("/login", function(req, res) {
+	res.render("login.ejs");
 });
 
 app.post("/login", function(req, res) {
